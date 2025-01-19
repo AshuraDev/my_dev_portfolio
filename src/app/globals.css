@@ -31,7 +31,7 @@
     --radius: 0.5rem;
   }
   .dark {
-    --background: #0a0a0a;
+    --background: #1c1d1e;
     --foreground: #fafafa;
     --card: #0a0a0a;
     --card-foreground: #fafafa;
@@ -65,8 +65,33 @@
   body {
     @apply bg-background text-foreground;
   }
-  /* body {
-    background: linear-gradient(to bottom, transparent, rgb(255, 255, 255))
-      rgb(214, 219, 220);
+  .mesh_animation {
+    animation: one 10s infinite;
+  }
+  /* Mesh animation */
+  @keyframes one {
+    0% {
+      left: 50%;
+      top: 50%;
+    }
+    25% {
+      left: 55%;
+      top: 50%;
+    }
+    50% {
+      left: 45%;
+      top: 50%;
+    }
+    100% {
+      left: 50%;
+      top: 50%;
+    }
+  }
+  /* @keyframes two {
+    0%{left: 0px; top: 0px;}
+    25%{ left: 150px;top: 10px;}
+    50%{left: 100px;top: 50px;}
+    75%{left: 50px;top: 100px;}
+    100%{ left: 50px;top: 20px;}
   } */
 }
