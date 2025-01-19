@@ -65,8 +65,14 @@
   body {
     @apply bg-background text-foreground;
   }
-  .mesh_animation {
+  .mesh_animation1 {
     animation: one 10s infinite;
+  }
+  .mesh_animation2 {
+    animation: two 10s infinite;
+  }
+  .mesh_animation3 {
+    animation: tree 10s infinite;
   }
   /* Mesh animation */
   @keyframes one {
@@ -85,6 +91,42 @@
     100% {
       left: 50%;
       top: 50%;
+    }
+  }
+  @keyframes two {
+    0% {
+      left: 60%;
+      top: 10%;
+    }
+    25% {
+      left: 65%;
+      top: 15%;
+    }
+    50% {
+      left: 70%;
+      top: 20%;
+    }
+    100% {
+      left: 60%;
+      top: 10%;
+    }
+  }
+  @keyframes tree {
+    0% {
+      left: 20%;
+      top: 70%;
+    }
+    25% {
+      left: 15%;
+      top: 70%;
+    }
+    50% {
+      left: 10%;
+      top: 70%;
+    }
+    100% {
+      left: 20%;
+      top: 70%;
     }
   }
   /* @keyframes two {

@@ -1,0 +1,40 @@
+{
+  "home": "accueil",
+  "sevices": "Services",
+  "portfolio": "Portfolio",
+  "contact": "Contact",
+  "open_menu": "Ouvrir le menu",
+  "close_menu": "Fermer le menu",
+  "greeting": "Bonjour 👋.",
+  "intro": "Je suis",
+  "name": "Donald AKOGBETO",
+  "headline": "Découvrez mon portfolio où l'innovation rencontre la créativité. Transformons vos idées en expériences numériques extraordinaires.",
+  "discover_more": "En savoir plus sur moi",
+  "view_portfolio": "Voir mes projets",
+  "frontDev": "Développeur Front-end",
+  "mobileDev": "Développeur Mobile",
+  "years_of_experience": "Années d'expérience",
+  "projects_completed": "Projets réalisés",
+  "clients_satisfied": "Clients satisfaits",
+  "about_me": "À propos de moi",
+  "greeting2": "Salut,",
+  "introduction": "je suis Donald AKOGBETO",
+  "description": "Passionné par le développement web et mobile, je suis un développeur front-end et mobile engagé à créer des expériences utilisateur intuitives et performantes. Avec une solide maîtrise des technologies modernes comme React et Flutter, j'aime transformer des idées en interfaces dynamiques et esthétiques. Toujours curieux et en quête d'amélioration, je m'efforce de combiner créativité et rigueur pour concevoir des solutions adaptées aux besoins des utilisateurs et des entreprises.",
+  "servicesList": {
+    "frontend_development": {
+      "title": "Développement Front-End",
+      "description": "Création de sites web modernes, rapides et attrayants, avec des interfaces élégantes et intuitives. Optimisation pour des performances élevées, un design responsive et une compatibilité parfaite sur tous les navigateurs. Approche garantissant des animations fluides et une optimisation SEO, pour offrir une expérience utilisateur mémorable."
+    },
+    "mobile_development": {
+      "title": "Développement Mobile",
+      "description": "Développement d’applications mobiles cross-platform performantes et esthétiques avec Flutter, compatibles à la fois sur Android et iOS. Objectif : fournir des solutions rapides, fluides et adaptées aux besoins des utilisateurs, tout en respectant les meilleures pratiques en matière de performance et de design."
+    }
+  },
+  "services_section": {
+    "title": "Mes Services",
+    "subtitle": "Transformer vos idées en expériences numériques."
+  },
+  "skills_section": {
+    "title": "Outils et Technologies"
+  }
+}

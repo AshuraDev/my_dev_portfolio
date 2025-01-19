@@ -1,0 +1,40 @@
+{
+  "home": "home",
+  "sevices": "Services",
+  "portfolio": "Portfolio",
+  "contact": "Contact",
+  "open_menu": "Open menu",
+  "close_menu": "Close menu",
+  "greeting": "Hello there 👋.",
+  "intro": "I'm",
+  "name": "Donald AKOGBETO",
+  "headline": "Dive into my portfolio where innovation meets creativity. Let’s turn ideas into extraordinary digital experiences.",
+  "discover_more": "Learn More About Me",
+  "view_portfolio": "View My Work",
+  "frontDev": "Front-end developer",
+  "mobileDev": "Mobile developer",
+  "years_of_experience": "Years of experience",
+  "projects_completed": "Projects completed",
+  "clients_satisfied": "Clients satisfied",
+  "about_me": "About Me",
+  "greeting2": "Hi,",
+  "introduction": "I'm Donald AKOGBETO",
+  "description": "Passionate about web and mobile development, I am a front-end and mobile developer committed to creating intuitive and high-performance user experiences. With a solid mastery of modern technologies like React and Flutter, I love transforming ideas into dynamic and aesthetic interfaces. Always curious and striving for improvement, I aim to combine creativity and rigor to design solutions tailored to the needs of users and businesses.",
+  "servicesList": {
+    "frontend_development": {
+      "title": "Front-End Development",
+      "description": "Creation of modern, fast, and visually appealing websites with elegant and intuitive interfaces. Optimization for high performance, responsive design, and perfect compatibility across all browsers. Approach ensures smooth animations and SEO optimization, delivering a memorable user experience."
+    },
+    "mobile_development": {
+      "title": "Mobile Development",
+      "description": "Development of cross-platform mobile applications with Flutter, offering high performance and stunning design, compatible with both Android and iOS. Focus on providing fast, seamless solutions tailored to user needs while adhering to best practices in performance and design."
+    }
+  },
+  "services_section": {
+    "title": "My Services",
+    "subtitle": "Transforming your ideas into digital experiences."
+  },
+  "skills_section": {
+    "title": "Tools and Technologies"
+  }
+}
