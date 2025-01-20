@@ -4,8 +4,6 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import "../globals.css";
 import Navigation from "@/components/navigation/navbar";
-import { headers } from "next/headers";
-import { notFound } from "next/navigation";
 // import ScrollProgressBar from "@/components/scroll-progress-bar";
 
 const roboto = Roboto({
@@ -18,18 +16,16 @@ export const metadata: Metadata = {
   description: "Front-end and mobile Developer Portfolio",
 };
 
+type paramsType = Promise<{ locale: string }>;
+
 export default async function RootLayout({
   children,
-  params: { locale },
+  params,
 }: Readonly<{
   children: React.ReactNode;
-  params: { locale: string };
+  params: paramsType;
 }>) {
-  const header = headers();
-  const localeHeader = (await header).get("x-next-intl-locale");
-  if (localeHeader === null) {
-    notFound();
-  }
+  const { locale } = await params;
   const messages = await getMessages();
   return (
     <html lang={locale}>
