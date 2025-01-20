@@ -31,7 +31,7 @@ export default async function RootLayout({
           {/* navBar */}
           <Navigation locale={locale} />
           {/* <ScrollProgressBar/> */}
-          <div className="w-full bg-fixed h-full relative">
+          <div className="w-full bg-fixed h-full pt-16 relative">
             {children}
           </div>
         </NextIntlClientProvider>
