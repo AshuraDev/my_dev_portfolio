@@ -16,10 +16,10 @@
   "years_of_experience": "Années d'expérience",
   "projects_completed": "Projets réalisés",
   "clients_satisfied": "Clients satisfaits",
-  "about_me": "À propos de moi",
-  "greeting2": "Salut,",
-  "introduction": "je suis Donald AKOGBETO",
-  "description": "Passionné par le développement web et mobile, je suis un développeur front-end et mobile engagé à créer des expériences utilisateur intuitives et performantes. Avec une solide maîtrise des technologies modernes comme React et Flutter, j'aime transformer des idées en interfaces dynamiques et esthétiques. Toujours curieux et en quête d'amélioration, je m'efforce de combiner créativité et rigueur pour concevoir des solutions adaptées aux besoins des utilisateurs et des entreprises.",
+  "about_me": "À propos",
+  "my_title": "Développeur Web et Mobile",
+  "skills_title" : "Compétences et Technologies",
+  "my_description": "Je suis un développeur front-end et mobile passionné, spécialisé dans la création d'expériences utilisateur intuitives et performantes. Avec une expertise dans des technologies comme React et Flutter, j'adore transformer des idées en interfaces élégantes et dynamiques. Quand je ne code pas, je découvre de nouveaux outils ou m'inspire des dernières tendances en design pour nourrir ma créativité.",
   "servicesList": {
     "frontend_development": {
       "title": "Développement Front-End",
@@ -33,8 +33,5 @@
   "services_section": {
     "title": "Mes Services",
     "subtitle": "Transformer vos idées en expériences numériques."
-  },
-  "skills_section": {
-    "title": "Outils et Technologies"
   }
 }

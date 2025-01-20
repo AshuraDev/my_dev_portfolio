@@ -81,11 +81,39 @@ html {
     @apply bg-background text-foreground;
   }
   section {
-    @apply w-full min-h-screen;
+    @apply w-full min-h-screen default-padding py-10;
     /* snap-center */
+  }
+  h2{
+    @apply relative pb-2 capitalize font-bold text-2xl text-foreground md:text-3xl lg:text-4xl w-fit;
   }
   .default-padding {
     @apply px-2 md:px-14 lg:px-40;
+  }
+  .gradient-text {
+    @apply bg-gradient-to-r from-blue-900 to-sky-500 bg-clip-text text-transparent;
+  }
+  /* heading 2 style */
+
+
+  h2:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 55px;
+    background-color: var(--primary);
+  }
+  h2:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    height: 1px;
+    width: 100vw;
+    max-width: 255px;
+    background-color: var(--primary);
   }
 
   /* Responsive navBar animations */
@@ -110,8 +138,5 @@ html {
     to {
       transform: translateY(0);
     }
-  }
-  .gradient-text {
-    @apply bg-gradient-to-r from-blue-900 to-sky-500 bg-clip-text text-transparent;
   }
 }

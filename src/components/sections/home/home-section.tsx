@@ -4,7 +4,7 @@ import About from "./about";
 
 const HomeSection = () => {
   return (
-    <div className="default-padding">
+    <div className="">
       <Intro />
       <About />
     </div>
