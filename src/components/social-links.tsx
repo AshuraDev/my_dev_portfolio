@@ -1,4 +1,3 @@
-"use client";
 
 import { socialLinks } from "@/constants/social-links";
 
