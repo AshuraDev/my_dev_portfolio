@@ -7,7 +7,7 @@ const Services = () => {
   const services = useServices();
   const t = useTranslations();
   return (
-    <section id="services">
+    <section id="services" className="">
       {/* title and subtitle */}
       <div className="flex items-start flex-col gap-2">
         <h2>{t("services_section.title")}</h2>

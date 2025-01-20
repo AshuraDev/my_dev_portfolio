@@ -18,7 +18,7 @@
   "clients_satisfied": "Clients satisfaits",
   "about_me": "À propos",
   "my_title": "Développeur Web et Mobile",
-  "skills_title" : "Compétences et Technologies",
+  "skills_title": "Compétences et Technologies",
   "my_description": "Je suis un développeur front-end et mobile passionné, spécialisé dans la création d'expériences utilisateur intuitives et performantes. Avec une expertise dans des technologies comme React et Flutter, j'adore transformer des idées en interfaces élégantes et dynamiques. Quand je ne code pas, je découvre de nouveaux outils ou m'inspire des dernières tendances en design pour nourrir ma créativité.",
   "servicesList": {
     "frontend_development": {
@@ -33,5 +33,25 @@
   "services_section": {
     "title": "Mes Services",
     "subtitle": "Transformer vos idées en expériences numériques."
+  },
+  "projectsList": {
+    "title": "Mon Portfolio",
+    "description": "Découvrez une sélection de mes projets",
+    "nft_landing_page": {
+      "title": "Landing Page pour un Service d'NFT",
+      "description": "Une landing page moderne pour un service d'NFT."
+    },
+    "clothing_brand_ecommerce": {
+      "title": "Site Ecommerce pour une Marque de Vêtements",
+      "description": "Un site ecommerce complet pour une marque de vêtements."
+    },
+    "doctor_booking_platform": {
+      "title": "Plateforme de prise de rendez-vous chez un médecin",
+      "description": "Une plateforme pour prendre des rendez-vous chez un médecin."
+    },
+    "equipment_ecommerce": {
+      "title": "Site Ecommerce pour équipements informatiques, télécommunication et électricité",
+      "description": "Un site ecommerce pour la vente d'équipements informatiques, de télécommunication et d'électricité."
+    }
   }
 }
