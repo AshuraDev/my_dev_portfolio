@@ -53,5 +53,14 @@
       "title": "Ecommerce Website for IT, Telecommunication, and Electrical Equipment",
       "description": "An ecommerce site for IT, telecommunication, and electrical equipment."
     }
+  },
+  "contact_section": {
+    "title": "Contact Me",
+    "description": "Got a question? Send me a message, and I'll get back to you soon.",
+    "name": "Name",
+    "email": "Email",
+    "send": "Send",
+    "subject": "Subject",
+    "message": "Message"
   }
 }

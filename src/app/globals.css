@@ -87,6 +87,9 @@ html {
   h2{
     @apply relative pb-2 capitalize font-bold text-2xl text-foreground md:text-3xl lg:text-4xl w-fit;
   }
+  input, textarea {
+    @apply bg-background text-foreground;
+  }
   .default-padding {
     @apply px-2 md:px-14 lg:px-40;
   }

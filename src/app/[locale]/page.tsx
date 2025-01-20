@@ -1,3 +1,4 @@
+import Contact from "@/components/sections/contact/contact-section";
 import HomeSection from "@/components/sections/home/home-section";
 import Portfolio from "@/components/sections/portfolio/portfolio-section";
 import Services from "@/components/sections/services/services-section";
@@ -8,6 +9,7 @@ export default function Home() {
       <HomeSection />
       <Services />
       <Portfolio />
+      <Contact />
     </main>
   );
 }

@@ -53,5 +53,14 @@
       "title": "Site Ecommerce pour équipements informatiques, télécommunication et électricité",
       "description": "Un site ecommerce pour la vente d'équipements informatiques, de télécommunication et d'électricité."
     }
+  },
+  "contact_section": {
+    "title": "Contactez-moi",
+    "description": "Vous avez une question ? Envoyez-moi un message, et je reviendrai vers vous bientôt.",
+    "name": "Nom",
+    "email": "Email",
+    "send": "Envoyer",
+    "subject": "Sujet",
+    "message": "Message"
   }
 }
