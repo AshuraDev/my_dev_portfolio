@@ -12,8 +12,8 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio - Donald AKOGBETO",
-  description: "Frontend and mobile Developer Portfolio",
+  title: "Portfolio | Donald AKOGBETO",
+  description: "Front-end and mobile Developer Portfolio",
 };
 
 export default async function RootLayout({
