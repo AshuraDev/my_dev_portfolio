@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #ffff;
+}
+::-webkit-scrollbar-thumb {
+  background: #1c1d1e;
+  /* background: #13161b; */
+}
+
 @layer base {
   :root {
     --background: #ffffff;
@@ -32,7 +47,7 @@
   }
   .dark {
     --background: #1c1d1e;
-    --foreground: #fafafa;
+    --foreground: #ffff;
     --card: #0a0a0a;
     --card-foreground: #fafafa;
     --popover: #0a0a0a;
@@ -65,75 +80,38 @@
   body {
     @apply bg-background text-foreground;
   }
-  .mesh_animation1 {
-    animation: one 10s infinite;
+  section {
+    @apply w-full min-h-screen text-foreground;
+    /* snap-center */
   }
-  .mesh_animation2 {
-    animation: two 10s infinite;
+  .default-padding {
+    @apply px-2 md:px-14 lg:px-40;
   }
-  .mesh_animation3 {
-    animation: tree 10s infinite;
+
+  /* Responsive navBar animations */
+  .backdrop-fade-in {
+    animation: fade-in 0.3s ease-out forwards;
   }
-  /* Mesh animation */
-  @keyframes one {
-    0% {
-      left: 50%;
-      top: 50%;
+  @keyframes fade-in {
+    from {
+      opacity: 0;
     }
-    25% {
-      left: 55%;
-      top: 50%;
-    }
-    50% {
-      left: 45%;
-      top: 50%;
-    }
-    100% {
-      left: 50%;
-      top: 50%;
+    to {
+      opacity: 1;
     }
   }
-  @keyframes two {
-    0% {
-      left: 60%;
-      top: 10%;
+  .menu-slide-down {
+    animation: slide-down 0.3s ease-out forwards;
+  }
+  @keyframes slide-down {
+    from {
+      transform: translateY(-100%);
     }
-    25% {
-      left: 65%;
-      top: 15%;
-    }
-    50% {
-      left: 70%;
-      top: 20%;
-    }
-    100% {
-      left: 60%;
-      top: 10%;
+    to {
+      transform: translateY(0);
     }
   }
-  @keyframes tree {
-    0% {
-      left: 20%;
-      top: 70%;
-    }
-    25% {
-      left: 15%;
-      top: 70%;
-    }
-    50% {
-      left: 10%;
-      top: 70%;
-    }
-    100% {
-      left: 20%;
-      top: 70%;
-    }
+  .gradient-text {
+    @apply bg-gradient-to-r from-blue-900 to-sky-500 bg-clip-text text-transparent;
   }
-  /* @keyframes two {
-    0%{left: 0px; top: 0px;}
-    25%{ left: 150px;top: 10px;}
-    50%{left: 100px;top: 50px;}
-    75%{left: 50px;top: 100px;}
-    100%{ left: 50px;top: 20px;}
-  } */
 }
