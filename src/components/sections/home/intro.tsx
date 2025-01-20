@@ -16,18 +16,36 @@ const Intro = () => {
     >
       {/* Introduction info */}
       <div className="flex flex-col justify-center w-full">
-        <span className="flex items-center text-3xl font-bold">
+        <span
+          className="flex items-center text-3xl font-bold"
+          data-aos="fade"
+          data-aos-duration="1000"
+        >
           {t("greeting")}
         </span>
-        <h1 className="text-5xl font-extrabold mt-4">
+        <h1
+          className="text-5xl font-extrabold mt-4"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           {t("intro")} <span className="gradient-text">{t("name")}</span>,
         </h1>
         <TypeWriterText />
-        <p className="mt-6 text-sm md:text-base">{t("headline")}</p>
-        <div className="mt-6">
+        <p
+          className="mt-6 text-sm md:text-base"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          {t("headline")}
+        </p>
+        <div className="mt-6" data-aos="fade-up" data-aos-duration="1000">
           <SocialLinks />
         </div>
-        <div className="flex space-x-4 mt-7">
+        <div
+          className="flex space-x-4 mt-7"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <Link href="#about">
             <Button variant={"default"}>
               {t("discover_more")} <LucideArrowRight className="w-4 h-4" />
@@ -39,7 +57,11 @@ const Intro = () => {
         </div>
       </div>
       {/* Coding illustration image */}
-      <div className="h-[350px] md:h-[450px] lg:h-[550px] w-full relative">
+      <div
+        className="h-[350px] md:h-[450px] lg:h-[550px] w-full relative"
+        data-aos="fade"
+        data-aos-duration="1000"
+      >
         <Image
           src={"/images/code3.webp"}
           alt={"Illustration"}

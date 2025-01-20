@@ -4,7 +4,8 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import "../globals.css";
 import Navigation from "@/components/navigation/navbar";
-// import ScrollProgressBar from "@/components/scroll-progress-bar";
+import AOSProvider from "@/components/aos-provider";
+import ScrollProgressBar from "@/components/scroll-progress-bar";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -31,12 +32,14 @@ export default async function RootLayout({
     <html lang={locale}>
       <body className={`${roboto.className} dark`}>
         <NextIntlClientProvider messages={messages}>
-          {/* navBar */}
-          <Navigation locale={locale} />
-          {/* <ScrollProgressBar/> */}
-          <div className="w-full bg-fixed h-full pt-16 relative">
-            {children}
-          </div>
+          <AOSProvider>
+            {/* navBar */}
+            <Navigation locale={locale} />
+            <ScrollProgressBar/>
+            <div className="w-full bg-fixed h-full pt-16 relative">
+              {children}
+            </div>
+          </AOSProvider>
         </NextIntlClientProvider>
         {/* Footer */}
       </body>
