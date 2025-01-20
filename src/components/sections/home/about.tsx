@@ -8,6 +8,7 @@ const About = () => {
     <section id="about" className="">
       {/* section title */}
       <h2>{t("about_me")}</h2>
+      {/* About me infos */}
       <div className="w-full mt-16">
         <AboutCard />
       </div>

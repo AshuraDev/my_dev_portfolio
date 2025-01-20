@@ -14,6 +14,7 @@ const Intro = () => {
       id="home"
       className="w-full flex flex-col items-center md:flex-row justify-center py-4 gap-5 default-padding"
     >
+      {/* Introduction info */}
       <div className="flex flex-col justify-center w-full">
         <span className="flex items-center text-3xl font-bold">
           {t("greeting")}
@@ -37,6 +38,7 @@ const Intro = () => {
           </Button>
         </div>
       </div>
+      {/* Coding illustration image */}
       <div className="h-[350px] md:h-[450px] lg:h-[550px] w-full relative">
         <Image
           src={"/images/code3.webp"}

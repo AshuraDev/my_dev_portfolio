@@ -90,6 +90,9 @@ html {
   .default-padding {
     @apply px-2 md:px-14 lg:px-40;
   }
+  .sub-title {
+    @apply text-sm text-muted-foreground;
+  } 
   .gradient-text {
     @apply bg-gradient-to-r from-blue-900 to-sky-500 bg-clip-text text-transparent;
   }

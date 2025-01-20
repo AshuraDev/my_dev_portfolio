@@ -34,7 +34,7 @@ export const MySkills: Skill[] = [
   },
   {
     name: "TypeScript",
-    image: "/images/typeScript.svg",
+    image: "/images/typescript.svg",
   },
 
   {

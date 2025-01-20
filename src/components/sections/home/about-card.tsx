@@ -34,7 +34,7 @@ const AboutCard = () => {
               {t("my_description")}
             </p>
             <div className="mb-6">
-              <h3 className="text-xl underline font-normale mb-2">
+              <h3 className="text-base underline font-normale mb-2">
               {t("skills_title")}
               </h3>
               <div className="flex flex-wrap gap-2">
