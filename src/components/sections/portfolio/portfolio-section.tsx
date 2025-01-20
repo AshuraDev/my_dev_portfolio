@@ -10,11 +10,15 @@ const Portfolio = () => {
   //
   return (
     <section id="portfolio" className="relative">
-        {/* <div className="absolute inset-0 w-full bg-primary h-[400px] -z-10"></div> */}
+      {/* <div className="absolute inset-0 w-full bg-primary h-[400px] -z-10"></div> */}
       {/* title and sub title */}
       <div className="flex items-start flex-col gap-2">
-        <h2>{t("projectsList.title")}</h2>
-        <p className="sub-title">🚀{t("projectsList.description")}🚀</p>
+        <h2 data-aos="fade-up" data-aos-duration="1000">
+          {t("projectsList.title")}
+        </h2>
+        <p className="sub-title" data-aos="fade-up" data-aos-duration="1000">
+          🚀{t("projectsList.description")}🚀
+        </p>
       </div>
       {/* Project List */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-16">

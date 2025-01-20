@@ -7,7 +7,11 @@ import { Typewriter } from "react-simple-typewriter";
 const TypeWriterText = () => {
   const t = useTranslations();
   return (
-    <p className="flex items-center text-2xl font-bold mt-2">
+    <p
+      className="flex items-center text-2xl font-bold mt-2"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       {
         <Typewriter
           words={[`${t("frontDev")}`, `${t("mobileDev")}`]}

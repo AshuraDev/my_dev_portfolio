@@ -1,5 +1,3 @@
-
-
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -12,10 +10,14 @@ const AboutCard = () => {
 
   //
   return (
-    <Card className="max-w-4xl mx-auto backdrop-blur-lg bg-black/25 border-none shadow-lg">
+    <Card className="max-w-4xl mx-auto backdrop-blur-lg bg-black/25 border-none shadow-lg" data-aos="fade" data-aos-duration="1000">
       <CardContent className="p-6 sm:p-10">
         <div className="flex flex-col sm:flex-row gap-8 items-center sm:items-start">
-          <div className="w-60 h-60 relative bg-gray-300 rounded-full overflow-hidden shadow-lg ">      
+          <div
+            className="w-60 h-60 relative bg-gray-300 rounded-full overflow-hidden shadow-lg "
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <Image
               src="/images/1.webp"
               alt="Donald AKOGBETO"
@@ -24,20 +26,40 @@ const AboutCard = () => {
             />
           </div>
           <div className="flex-1 text-center sm:text-left">
-            <span className="text-3xl font-bold mb-2">
-                {t("name")}
-                </span>
-            <p className="text-xl text-primary mb-4">
+            <span
+              className="text-3xl font-bold mb-2"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              {t("name")}
+            </span>
+            <p
+              className="text-xl text-primary mb-4"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               {t("my_title")}
             </p>
-            <p className="text-foreground/20 text-justify mb-6">
+            <p
+              className="text-foreground/20 text-justify mb-6"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               {t("my_description")}
             </p>
             <div className="mb-6">
-              <h3 className="text-base underline font-normale mb-2">
-              {t("skills_title")}
+              <h3
+                className="text-base underline font-normale mb-2"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                {t("skills_title")}
               </h3>
-              <div className="flex flex-wrap gap-2">
+              <div
+                className="flex flex-wrap gap-2"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 {MySkills.map((skill, i) => (
                   <Badge
                     key={i}
@@ -55,7 +77,11 @@ const AboutCard = () => {
                 ))}
               </div>
             </div>
-            <div className="w-full justify-center items-center">
+            <div
+              className="w-full justify-center items-center"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <SocialLinks />
             </div>
           </div>

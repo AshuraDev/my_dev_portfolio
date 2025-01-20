@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import { z } from "zod";
 
 const ContactForm = () => {
-    const t = useTranslations();
+  const t = useTranslations();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -52,14 +52,18 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="w-full max-w-lg mx-auto backdrop-blur-lg bg-black/25 p-8 rounded-lg shadow-lg">
+    <div
+      className="w-full max-w-lg mx-auto backdrop-blur-lg bg-black/25 p-8 rounded-lg shadow-lg"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label
             htmlFor="name"
             className="block text-sm font-medium text-muted-foreground"
           >
-           {t("contact_section.name")}
+            {t("contact_section.name")}
           </label>
           <input
             type="text"
@@ -135,14 +139,9 @@ const ContactForm = () => {
           )}
         </div>
         <div>
-          <Button
-          variant={"default"}
-            type="submit"
-            className="w-full"
-          >
+          <Button variant={"default"} type="submit" className="w-full">
             {t("contact_section.send")}
           </Button>
-          
         </div>
       </form>
     </div>

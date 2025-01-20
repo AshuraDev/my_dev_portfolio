@@ -10,8 +10,12 @@ const Services = () => {
     <section id="services" className="">
       {/* title and subtitle */}
       <div className="flex items-start flex-col gap-2">
-        <h2>{t("services_section.title")}</h2>
-        <p className="sub-title">✨{t("services_section.subtitle")}✨</p>
+        <h2 data-aos="fade-up" data-aos-duration="1000">
+          {t("services_section.title")}
+        </h2>
+        <p className="sub-title" data-aos="fade-up" data-aos-duration="1000">
+          ✨{t("services_section.subtitle")}✨
+        </p>
       </div>
       {/* service list */}
       <div className="w-full mt-16 flex items-center justify-center flex-col md:flex-row gap-10">
