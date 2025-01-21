@@ -10,17 +10,15 @@ const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    subject: "",
     message: "",
   });
 
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
 
   const schema = z.object({
-    name: z.string().min(1, { message: "Le nom est requis" }),
+    name: z.string().min(3, { message: "Le nom est requis" }),
     email: z.string().email({ message: "Email invalide" }),
-    subject: z.string().min(1, { message: "Le sujet est requis" }),
-    message: z.string().min(1, { message: "Le message est requis" }),
+    message: z.string().min(2, { message: "Le message est requis" }),
   });
 
   const handleChange = (
@@ -59,10 +57,7 @@ const ContactForm = () => {
     >
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
-          <label
-            htmlFor="name"
-            className="block text-sm font-medium text-muted-foreground"
-          >
+          <label htmlFor="name" className="block text-sm font-medium mb-2">
             {t("contact_section.name")}
           </label>
           <input
@@ -71,18 +66,17 @@ const ContactForm = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            className="mt-1 block w-full px-3 py-2 border border-gray-100 rounded-md shadow-sm focus:outline-none focus:ring-primary_color focus:border-primary_color sm:text-sm"
-            required
+            className={`w-full p-2 rounded-md bg-transparent border ${
+              errors.name ? "border-red-500" : "border-input"
+            }`}
           />
           {errors.name && (
             <p className="text-red-500 text-sm mt-1">{errors.name}</p>
           )}
         </div>
+
         <div>
-          <label
-            htmlFor="email"
-            className="block text-sm font-medium text-muted-foreground"
-          >
+          <label htmlFor="email" className="block text-sm font-medium mb-2">
             {t("contact_section.email")}
           </label>
           <input
@@ -91,38 +85,17 @@ const ContactForm = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary_color focus:border-primary_color sm:text-sm"
-            required
+            className={`w-full p-2 rounded-md bg-transparent border ${
+              errors.email ? "border-red-500" : "border-input"
+            }`}
           />
           {errors.email && (
             <p className="text-red-500 text-sm mt-1">{errors.email}</p>
           )}
         </div>
+
         <div>
-          <label
-            htmlFor="subject"
-            className="block text-sm font-medium text-muted-foreground"
-          >
-            {t("contact_section.subject")}
-          </label>
-          <input
-            type="text"
-            id="subject"
-            name="subject"
-            value={formData.subject}
-            onChange={handleChange}
-            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary_color focus:border-primary_color sm:text-sm"
-            required
-          />
-          {errors.subject && (
-            <p className="text-red-500 text-sm mt-1">{errors.subject}</p>
-          )}
-        </div>
-        <div>
-          <label
-            htmlFor="message"
-            className="block text-sm font-medium text-muted-foreground"
-          >
+          <label htmlFor="message" className="block text-sm font-medium mb-2">
             {t("contact_section.message")}
           </label>
           <textarea
@@ -131,18 +104,18 @@ const ContactForm = () => {
             value={formData.message}
             onChange={handleChange}
             rows={4}
-            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary_color focus:border-primary_color sm:text-sm"
-            required
+            className={`w-full p-2 rounded-md bg-transparent border ${
+              errors.message ? "border-red-500" : "border-input"
+            }`}
           />
           {errors.message && (
             <p className="text-red-500 text-sm mt-1">{errors.message}</p>
           )}
         </div>
-        <div>
-          <Button variant={"default"} type="submit" className="w-full">
-            {t("contact_section.send")}
-          </Button>
-        </div>
+
+        <Button type="submit" className="w-full">
+          {t("contact_section.send")}
+        </Button>
       </form>
     </div>
   );
