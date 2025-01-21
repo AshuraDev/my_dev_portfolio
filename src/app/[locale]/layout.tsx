@@ -7,6 +7,7 @@ import "../globals.css";
 import Navigation from "@/components/navigation/navbar";
 import AOSProvider from "@/components/aos-provider";
 import ScrollProgressBar from "@/components/scroll-progress-bar";
+import Footer from "@/components/footer/footer";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -17,7 +18,6 @@ export const metadata: Metadata = {
   title: "Portfolio | Donald AKOGBETO",
   description: "Front-end and mobile Developer Portfolio",
 };
-
 
 type Params = Promise<{ locale: string }>;
 
@@ -43,10 +43,9 @@ export default async function RootLayout({
           <AOSProvider>
             {/* navBar */}
             <Navigation locale={locale} />
-            <ScrollProgressBar/>
-            <div className="w-full bg-fixed h-full pt-16 relative">
-              {children}
-            </div>
+            <ScrollProgressBar />
+            <div className="w-full h-full pt-16">{children}</div>
+            <Footer />
           </AOSProvider>
         </NextIntlClientProvider>
         {/* Footer */}

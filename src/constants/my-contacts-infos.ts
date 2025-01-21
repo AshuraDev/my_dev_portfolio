@@ -9,17 +9,17 @@ interface ContactInfo {
 export const contactInfo: ContactInfo[] = [
   {
     type: 'Phone',
-    value: '+123 456 7890',
+    value: '+229 0196473938',
     icon: Phone,
   },
   {
     type: 'WhatsApp',
-    value: '+123 456 7890',
+    value: '+229 0194693700',
     icon: MessageCircle,
   },
   {
     type: 'Email',
-    value: 'contact@example.com',
+    value: 'akogbetodonald@gmail.com',
     icon: Mail,
   },
 ];

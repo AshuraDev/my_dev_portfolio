@@ -16,31 +16,31 @@ interface SocialLink {
 
 export const socialLinks: SocialLink[] = [
   {
-    icon: Instagram,
-    color: "#E4405F",
-    href: "link",
-    label: "Instagram",
-    username: "username",
-  },
-  {
     icon: Linkedin,
     color: "#0077B5",
-    href: "link",
+    href: "https://www.linkedin.com/in/donald-akogbeto-aba040321/",
     label: "LinkedIn",
-    username: "username",
-  },
-  {
-    icon: Facebook,
-    color: "#1877F2",
-    href: "link",
-    label: "Facebook",
-    username: "username",
+    username: "",
   },
   {
     icon: Github,
     color: "#E4405F",
-    href: "link",
+    href: "https://github.com/AshuraDev/",
     label: "GitHub",
-    username: "username",
+    username: "",
+  },
+  {
+    icon: Instagram,
+    color: "#E4405F",
+    href: "https://www.instagram.com/donald_akgb",
+    label: "Instagram",
+    username: "",
+  },
+  {
+    icon: Facebook,
+    color: "#1877F2",
+    href: "https://www.facebook.com/Donald.AKOGBETO",
+    label: "Facebook",
+    username: "",
   },
 ];

@@ -56,13 +56,13 @@ export function ProjectCard({
           ))}
         </div>
 
-        <div className="flex gap-4 mt-auto">
+        <div className="flex gap-4 mt-auto ">
           {githubUrl && (
             <a
               href={githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-secondary-foreground hover:text-foreground transition-colors"
+              className="flex items-center gap-2 text-secondary-foreground hover:text-primary transition-colors"
             >
               <Github size={20} />
               <span className="text-xs md:text-sm lg:text-base">Code</span>
@@ -73,7 +73,7 @@ export function ProjectCard({
               href={liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-secondary-foreground hover:text-foreground transition-colors"
+              className="flex items-center gap-2 text-secondary-foreground hover:text-primary transition-colors"
             >
               <ExternalLink size={20} />
               <span className="text-xs md:text-sm lg:text-base">Live Demo</span>
