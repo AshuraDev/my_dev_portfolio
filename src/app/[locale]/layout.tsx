@@ -18,18 +18,17 @@ export const metadata: Metadata = {
   description: "Front-end and mobile Developer Portfolio",
 };
 
-export function generateStaticParams() {
-  return [{ locale: "en" }, { locale: "fr" }];
-}
+
+type Params = Promise<{ locale: string }>;
 
 export default async function RootLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Params;
 }) {
-  const locale = params.locale;
+  const { locale } = await params;
   let messages;
   try {
     messages = await getMessages({ locale });
