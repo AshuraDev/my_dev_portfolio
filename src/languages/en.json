@@ -66,6 +66,9 @@
     "email": "Email",
     "send": "Send",
     "subject": "Subject",
-    "message": "Message"
+    "message": "Message",
+    "sending": "Sending...",
+    "success_message": "Message sent successfully!",
+    "error_message": "Failed to send message. Please try again."
   }
 }

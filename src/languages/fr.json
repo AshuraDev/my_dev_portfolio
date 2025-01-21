@@ -5,7 +5,7 @@
   "contact": "Contact",
   "open_menu": "Ouvrir le menu",
   "close_menu": "Fermer le menu",
-  "greeting": "Bonjour 👋.",
+  "greeting": "Bonjour ",
   "intro": "Je suis",
   "name": "Donald AKOGBETO",
   "headline": "Découvrez mon portfolio où l'innovation rencontre la créativité. Transformons vos idées en expériences numériques extraordinaires.",
@@ -60,12 +60,15 @@
     }
   },
   "contact_section": {
-    "title": "Contactez-moi",
-    "description": "Vous avez une question ? Envoyez-moi un message, et je reviendrai vers vous bientôt.",
+    "title": "Me Contacter",
+    "description": "Vous avez une question ? Envoyez-moi un message, je vous répondrai bientôt.",
     "name": "Nom",
     "email": "Email",
     "send": "Envoyer",
     "subject": "Sujet",
-    "message": "Message"
+    "message": "Message",
+    "sending": "En cours...",
+    "success_message": "Message envoyé avec succès !",
+    "error_message": "Échec de l'envoi du message. Veuillez réessayer."
   }
 }

@@ -9,6 +9,7 @@ import AOSProvider from "@/components/aos-provider";
 import ScrollProgressBar from "@/components/scroll-progress-bar";
 import Footer from "@/components/footer/footer";
 import { AnimatedBlobs } from "@/components/animated-blobs";
+import { Toaster } from "sonner";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -43,6 +44,7 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages} locale={locale}>
           <AOSProvider>
             <AnimatedBlobs />
+            <Toaster richColors position="top-right" theme="dark" />
             {/* navBar */}
             <Navigation locale={locale} />
             <ScrollProgressBar />

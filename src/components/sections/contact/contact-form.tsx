@@ -1,9 +1,11 @@
-"use client";
+'use client';
 
-import { Button } from "@/components/ui/button";
-import { useTranslations } from "next-intl";
-import React, { useState } from "react";
-import { z } from "zod";
+import { useTranslations } from 'next-intl';
+import { useState } from 'react';
+import { z } from 'zod';
+import { Button } from '@/components/ui/button';
+import emailjs from '@emailjs/browser';
+import { toast } from 'sonner';
 
 const ContactForm = () => {
   const t = useTranslations();
@@ -13,6 +15,7 @@ const ContactForm = () => {
     message: "",
   });
 
+  const [isLoading, setIsLoading] = useState(false);
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
 
   const schema = z.object({
@@ -31,21 +34,63 @@ const ContactForm = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const result = schema.safeParse(formData);
-    if (!result.success) {
-      const fieldErrors: { [key: string]: string } = {};
-      result.error.errors.forEach((error) => {
-        if (error.path.length > 0) {
-          fieldErrors[error.path[0]] = error.message;
-        }
-      });
-      setErrors(fieldErrors);
-    } else {
+    setIsLoading(true);
+
+    try {
+      // Validate form data
+      schema.parse(formData);
       setErrors({});
-      console.log("Form submitted:", formData);
-      // Handle form submission logic here
+
+      if (!process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || 
+          !process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || 
+          !process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY) {
+        throw new Error('EmailJS configuration is missing');
+      }
+
+      // Initialize EmailJS
+      emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
+
+      // Send email using EmailJS
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        }
+      );
+
+      // Show success message
+      toast.success(t('contact_section.success_message'), {
+        duration: 3000,
+      });
+      
+      // Clear form
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        const fieldErrors: { [key: string]: string } = {};
+        error.errors.forEach((err) => {
+          if (err.path) {
+            fieldErrors[err.path[0]] = err.message;
+          }
+        });
+        setErrors(fieldErrors);
+      } else {
+        console.error('Email sending error:', error);
+        toast.error(t('contact_section.error_message'), {
+          duration: 3000,
+        });
+      }
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -66,6 +111,7 @@ const ContactForm = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
+            disabled={isLoading}
             className={`w-full p-2 rounded-md bg-transparent border ${
               errors.name ? "border-red-500" : "border-input"
             }`}
@@ -85,6 +131,7 @@ const ContactForm = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
+            disabled={isLoading}
             className={`w-full p-2 rounded-md bg-transparent border ${
               errors.email ? "border-red-500" : "border-input"
             }`}
@@ -103,6 +150,7 @@ const ContactForm = () => {
             name="message"
             value={formData.message}
             onChange={handleChange}
+            disabled={isLoading}
             rows={4}
             className={`w-full p-2 rounded-md bg-transparent border ${
               errors.message ? "border-red-500" : "border-input"
@@ -113,8 +161,29 @@ const ContactForm = () => {
           )}
         </div>
 
-        <Button type="submit" className="w-full">
-          {t("contact_section.send")}
+        <Button type="submit" className="w-full" disabled={isLoading}>
+          {isLoading ? (
+            <span className="flex items-center justify-center gap-2">
+              <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
+                <circle
+                  className="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  strokeWidth="4"
+                />
+                <path
+                  className="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                />
+              </svg>
+              {t('contact_section.sending')}
+            </span>
+          ) : (
+            t("contact_section.send")
+          )}
         </Button>
       </form>
     </div>
