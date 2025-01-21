@@ -68,7 +68,9 @@
     "subject": "Sujet",
     "message": "Message",
     "sending": "En cours...",
-    "success_message": "Message envoyé avec succès !",
-    "error_message": "Échec de l'envoi du message. Veuillez réessayer."
+    "success_message": "Message envoyé !",
+    "success_details": "Merci pour votre message. Je vous répondrai bientôt !",
+    "error_message": "Erreur",
+    "error_details": "Désolé, une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer."
   }
 }

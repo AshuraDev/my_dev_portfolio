@@ -68,7 +68,9 @@
     "subject": "Subject",
     "message": "Message",
     "sending": "Sending...",
-    "success_message": "Message sent successfully!",
-    "error_message": "Failed to send message. Please try again."
+    "success_message": "Message sent!",
+    "success_details": "Thank you for your message. I'll get back to you soon!",
+    "error_message": "Error",
+    "error_details": "Sorry, there was an error sending your message. Please try again."
   }
 }

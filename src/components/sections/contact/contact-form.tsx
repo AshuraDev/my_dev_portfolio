@@ -5,10 +5,13 @@ import { useState } from 'react';
 import { z } from 'zod';
 import { Button } from '@/components/ui/button';
 import emailjs from '@emailjs/browser';
-import { toast } from 'sonner';
+import { useToast } from "@/hooks/use-toast"
+
 
 const ContactForm = () => {
   const t = useTranslations();
+  const { toast } = useToast();
+  
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -64,8 +67,10 @@ const ContactForm = () => {
       );
 
       // Show success message
-      toast.success(t('contact_section.success_message'), {
-        duration: 3000,
+      toast({
+        title: t('contact_section.success_message'),
+        description: t('contact_section.success_details'),
+        variant: "default",
       });
       
       // Clear form
@@ -85,8 +90,10 @@ const ContactForm = () => {
         setErrors(fieldErrors);
       } else {
         console.error('Email sending error:', error);
-        toast.error(t('contact_section.error_message'), {
-          duration: 3000,
+        toast({
+          title: t('contact_section.error_message'),
+          description: t('contact_section.error_details'),
+          variant: "destructive",
         });
       }
     } finally {
