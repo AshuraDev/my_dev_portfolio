@@ -8,6 +8,7 @@ import Navigation from "@/components/navigation/navbar";
 import AOSProvider from "@/components/aos-provider";
 import ScrollProgressBar from "@/components/scroll-progress-bar";
 import Footer from "@/components/footer/footer";
+import { AnimatedBlobs } from "@/components/animated-blobs";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -38,9 +39,10 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={`${roboto.className} dark`}>
+      <body className={`${roboto.className} dark relative min-h-screen overflow-x-hidden`}>
         <NextIntlClientProvider messages={messages} locale={locale}>
           <AOSProvider>
+            <AnimatedBlobs />
             {/* navBar */}
             <Navigation locale={locale} />
             <ScrollProgressBar />
@@ -48,7 +50,6 @@ export default async function RootLayout({
             <Footer />
           </AOSProvider>
         </NextIntlClientProvider>
-        {/* Footer */}
       </body>
     </html>
   );

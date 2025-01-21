@@ -10,7 +10,7 @@ const AboutCard = () => {
 
   //
   return (
-    <Card className="max-w-4xl mx-auto backdrop-blur-lg bg-black/25 border-none shadow-lg" data-aos="fade" data-aos-duration="1000">
+    <Card className="max-w-4xl mx-auto blur-effect border-none shadow-lg" data-aos="fade" data-aos-duration="1000">
       <CardContent className="p-6 sm:p-10">
         <div className="flex flex-col sm:flex-row gap-8 items-center sm:items-start">
           <div

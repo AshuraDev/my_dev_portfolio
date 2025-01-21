@@ -53,7 +53,7 @@ const ContactForm = () => {
 
   return (
     <div
-      className="w-full max-w-lg mx-auto backdrop-blur-lg bg-black/25 p-8 rounded-lg shadow-lg"
+      className="w-full max-w-lg mx-auto blur-effect p-8 rounded-lg shadow-lg"
       data-aos="fade-up"
       data-aos-duration="1000"
     >

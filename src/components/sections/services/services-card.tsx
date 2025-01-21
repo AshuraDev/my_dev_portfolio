@@ -14,7 +14,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 }) => {
   return (
     <div
-      className="relative overflow-hidden rounded-sm bg-card shadow-sm transition-all hover:shadow-2xl flex flex-col h-[450px] max-w-lg"
+      className="relative overflow-hidden rounded-sm blur-effect shadow-sm transition-all hover:shadow-2xl flex flex-col h-[450px] max-w-lg"
       data-aos="fade-up"
       data-aos-duration="1000"
     >

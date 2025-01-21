@@ -5,7 +5,7 @@ import React from "react";
 const ContactInfos = () => {
   return (
     <div
-      className="w-full mx-auto  backdrop-blur-lg bg-black/25 p-8 rounded-lg max-w-lg shadow-lg"
+      className="w-full mx-auto  blur-effect p-8 rounded-lg max-w-lg shadow-lg"
       data-aos="fade-up"
       data-aos-duration="1000"
     >
