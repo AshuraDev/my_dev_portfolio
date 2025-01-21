@@ -1,6 +1,6 @@
 {
   "home": "home",
-  "sevices": "Services",
+  "services": "Services",
   "portfolio": "Portfolio",
   "contact": "Contact",
   "open_menu": "Open menu",
@@ -19,6 +19,11 @@
   "about_me": "About Me",
   "my_title": "Front-end web and mobile developer",
   "skills_title": "Skills and Technology",
+  "not_found": {
+    "title": "Page Not Found",
+    "description": "Sorry, the page you are looking for doesn't exist or has been moved.",
+    "back_home": "Back to Home"
+  },
   "my_description": "I'm a passionate front-end and mobile developer with a knack for building intuitive, high-performance user experiences. Skilled in technologies like React and Flutter, I thrive on turning ideas into sleek, dynamic interfaces. When I'm not coding, you’ll find me exploring new tools or diving into design trends to keep my creativity flowing.",
   "servicesList": {
     "frontend_development": {

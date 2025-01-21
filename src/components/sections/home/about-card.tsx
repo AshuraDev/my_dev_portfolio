@@ -19,10 +19,10 @@ const AboutCard = () => {
             data-aos-duration="1000"
           >
             <Image
-              src="/images/1.webp"
+              src="/images/me.jpeg"
               alt="Donald AKOGBETO"
-              layout="fill"
-              objectFit="cover"
+              fill
+              style={{ objectFit: "cover" }}
             />
           </div>
           <div className="flex-1 text-center sm:text-left">

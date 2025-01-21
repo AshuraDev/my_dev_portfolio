@@ -21,7 +21,7 @@ const MenuButton = ({ status, action }: menuProps) => {
         alt={status ? t("close_menu") : t("open_menu")}
         height={40}
         width={40}
-        objectFit="contain"
+        style={{ objectFit: "contain" }}
         onClick={action}
       />
     </div>

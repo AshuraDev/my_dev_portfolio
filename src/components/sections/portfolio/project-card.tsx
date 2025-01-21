@@ -31,7 +31,7 @@ export function ProjectCard({
           src={image}
           alt={title}
           fill
-          objectFit="cover"
+          style={{ objectFit: "cover" }}
           // className="transition-transform duration-300 hover:scale-105"
         />
       </div>

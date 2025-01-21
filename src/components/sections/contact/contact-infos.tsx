@@ -12,7 +12,7 @@ const ContactInfos = () => {
       <div className="space-y-4">
         {contactInfo.map((info, index) => (
           <div key={index} className="flex items-center space-x-4">
-            <info.icon className="text-primary_color" size={24} />
+            <info.icon className="text-primary" size={24} />
             <div>
               <h3 className="font-semibold">{info.type}</h3>
               <p className="text-muted-foreground text-sm md:text-base">

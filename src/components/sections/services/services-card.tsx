@@ -14,7 +14,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 }) => {
   return (
     <div
-      className="relativ e overflow-hidden rounded-sm bg-card shadow-sm transition-all hover:shadow-2xl flex flex-col h-[450px] max-w-lg"
+      className="relative overflow-hidden rounded-sm bg-card shadow-sm transition-all hover:shadow-2xl flex flex-col h-[450px] max-w-lg"
       data-aos="fade-up"
       data-aos-duration="1000"
     >
@@ -22,8 +22,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         <Image
           src={imageUrl}
           alt={title}
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{ objectFit: "cover" }}
           className=""
         />
       </div>

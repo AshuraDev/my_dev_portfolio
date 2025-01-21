@@ -1,6 +1,6 @@
 {
   "home": "accueil",
-  "sevices": "Services",
+  "services": "Services",
   "portfolio": "Portfolio",
   "contact": "Contact",
   "open_menu": "Ouvrir le menu",
@@ -19,6 +19,11 @@
   "about_me": "À propos",
   "my_title": "Développeur Web et Mobile",
   "skills_title": "Compétences et Technologies",
+  "not_found": {
+    "title": "Page Non Trouvée",
+    "description": "Désolé, la page que vous recherchez n'existe pas ou a été déplacée.",
+    "back_home": "Retour à l'Accueil"
+  },
   "my_description": "Je suis un développeur front-end et mobile passionné, spécialisé dans la création d'expériences utilisateur intuitives et performantes. Avec une expertise dans des technologies comme React et Flutter, j'adore transformer des idées en interfaces élégantes et dynamiques. Quand je ne code pas, je découvre de nouveaux outils ou m'inspire des dernières tendances en design pour nourrir ma créativité.",
   "servicesList": {
     "frontend_development": {
