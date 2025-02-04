@@ -19,7 +19,7 @@ const AboutCard = () => {
             data-aos-duration="1000"
           >
             <Image
-              src="/images/me.jpeg"
+              src="/images/donald.webp"
               alt="Donald AKOGBETO"
               fill
               style={{ objectFit: "cover" }}

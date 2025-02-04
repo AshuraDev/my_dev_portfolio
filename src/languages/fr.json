@@ -54,6 +54,10 @@
       "title": "Plateforme de prise de rendez-vous chez un médecin",
       "description": "Une plateforme pour prendre des rendez-vous chez un médecin."
     },
+    "authentification_with_nextauth": {
+    "title": "Authentification avec NextAuth.js",
+    "description": "Une solution d'authentification moderne et sécurisée pour les applications, comprenant une vérification en deux étapes (2FA), une confirmation par email, ainsi qu'une gestion séparée des accès administrateur et utilisateur."
+  },
     "equipment_ecommerce": {
       "title": "Site Ecommerce pour équipements informatiques, télécommunication et électricité",
       "description": "Un site ecommerce pour la vente d'équipements informatiques, de télécommunication et d'électricité."

@@ -54,6 +54,10 @@
       "title": "Appointment Booking Platform for Doctors",
       "description": "A platform to book appointments with doctors."
     },
+    "authentication_with_nextauth": {
+    "title": "Authentication with NextAuth.js",
+    "description": "A modern and secure authentication solution for applications, featuring two-factor authentication (2FA), email verification, and separate admin/user access management."
+  },
     "equipment_ecommerce": {
       "title": "Ecommerce Website for IT, Telecommunication, and Electrical Equipment",
       "description": "An ecommerce site for IT, telecommunication, and electrical equipment."
