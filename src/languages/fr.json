@@ -55,12 +55,16 @@
       "description": "Une plateforme pour prendre des rendez-vous chez un médecin."
     },
     "authentification_with_nextauth": {
-    "title": "Authentification avec NextAuth.js",
-    "description": "Une solution d'authentification moderne et sécurisée pour les applications, comprenant une vérification en deux étapes (2FA), une confirmation par email, ainsi qu'une gestion séparée des accès administrateur et utilisateur."
-  },
-    "equipment_ecommerce": {
-      "title": "Site Ecommerce pour équipements informatiques, télécommunication et électricité",
-      "description": "Un site ecommerce pour la vente d'équipements informatiques, de télécommunication et d'électricité."
+      "title": "Authentification avec NextAuth.js",
+      "description": "Une solution d'authentification moderne et sécurisée pour les applications, comprenant une vérification en deux étapes (2FA), une confirmation par email, ainsi qu'une gestion séparée des accès administrateur et utilisateur."
+    },
+    "project_5_store_pilot": {
+      "title": "Store Pilot (Admin E-commerce)",
+      "description": "Panneau fonctionnel permettant de gérer plusieurs boutiques : création et organisation de catégories, bannières, couleurs, tailles, suivi des commandes et gestion des produits en toute simplicité."
+    },
+    "project_6_my_store": {
+      "title": "My Store (Frontend E-commerce)",
+      "description": "Interface e-commerce simple et épurée pour la vente de chaussures, intégrant une démonstration de paiement via Stripe pour simuler une expérience d'achat complète."
     }
   },
   "contact_section": {

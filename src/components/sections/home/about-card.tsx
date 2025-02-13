@@ -10,12 +10,12 @@ const AboutCard = () => {
 
   //
   return (
-    <Card className="max-w-4xl mx-auto blur-effect border-none shadow-lg" data-aos="fade" data-aos-duration="1000">
+    <Card className="max-w-4xl mx-auto blur-effect border-none shadow-lg" data-aos="fade-up" data-aos-duration="1000">
       <CardContent className="p-6 sm:p-10">
         <div className="flex flex-col sm:flex-row gap-8 items-center sm:items-start">
           <div
             className="w-60 h-60 relative bg-gray-300 rounded-full overflow-hidden shadow-lg "
-            data-aos="fade-up"
+            data-aos="fade"
             data-aos-duration="1000"
           >
             <Image
@@ -49,15 +49,15 @@ const AboutCard = () => {
             </p>
             <div className="mb-6">
               <h3
-                className="text-base underline font-normale mb-2"
-                data-aos="fade-up"
+                className="text-base font-normale mb-2"
+                data-aos="fade"
                 data-aos-duration="1000"
               >
-                {t("skills_title")}
+                {t("skills_title")} :
               </h3>
               <div
                 className="flex flex-wrap gap-2"
-                data-aos="fade-up"
+                data-aos="fade"
                 data-aos-duration="1000"
               >
                 {MySkills.map((skill, i) => (
@@ -79,8 +79,9 @@ const AboutCard = () => {
             </div>
             <div
               className="w-full justify-center items-center"
-              data-aos="fade-up"
+              data-aos="fade"
               data-aos-duration="1000"
+              data-aos-anchor-placement="bottom"
             >
               <SocialLinks />
             </div>

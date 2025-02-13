@@ -52,13 +52,29 @@ export const useProjects = (): Project[] => {
       githubUrl: "https://github.com/AshuraDev/next-auth",
       liveUrl: "https://auth-system-mocha-three.vercel.app/",
     },
-    // {
-    //   title: t("projectsList.equipment_ecommerce.title"),
-    //   description: t("projectsList.equipment_ecommerce.description"),
-    //   image: "/images/mon_projet_4.webp",
-    //   technologies: ["Angular", "TypeScript", "Express"],
-    //   githubUrl: "",
-    //   liveUrl: "https://www.planetechsarlbenin.com/",
-    // },
+    {
+      title: t("projectsList.project_5_store_pilot.title"),
+      description: t("projectsList.project_5_store_pilot.description"),
+      image: "/images/dash-ecommerce.webp",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "Tailwind CSS",
+        "Shadcn UI",
+        "Prisma",
+        "Mysql",
+        "Stripe",
+      ],
+      githubUrl: "",
+      liveUrl: "https://admin-store-pilot.vercel.app/",
+    },
+    {
+      title: t("projectsList.project_6_my_store.title"),
+      description: t("projectsList.project_6_my_store.description"),
+      image: "/images/my-store.webp",
+      technologies: ["Next.js", "Typescript", "Tailwind CSS", "Stripe"],
+      githubUrl: "https://github.com/AshuraDev/ecommerce-store",
+      liveUrl: "https://my-store-demo-coral.vercel.app/",
+    },
   ];
 };

@@ -55,12 +55,16 @@
       "description": "A platform to book appointments with doctors."
     },
     "authentication_with_nextauth": {
-    "title": "Authentication with NextAuth.js",
-    "description": "A modern and secure authentication solution for applications, featuring two-factor authentication (2FA), email verification, and separate admin/user access management."
-  },
-    "equipment_ecommerce": {
-      "title": "Ecommerce Website for IT, Telecommunication, and Electrical Equipment",
-      "description": "An ecommerce site for IT, telecommunication, and electrical equipment."
+      "title": "Authentication with NextAuth.js",
+      "description": "A modern and secure authentication solution for applications, featuring two-factor authentication (2FA), email verification, and separate admin/user access management."
+    },
+    "project_5_store_pilot": {
+      "title": "Store Pilot (Admin E-commerce)",
+      "description": "A functional dashboard that allows you to manage multiple stores with ease. Create and organize categories, banners, colors, and sizes, while tracking orders and managing products effortlessly."
+    },
+    "project_6_my_store": {
+      "title": "My Store (Frontend E-commerce)",
+      "description": "A simple and clean e-commerce interface for shoe sales, featuring a Stripe payment demo to simulate a complete shopping experience."
     }
   },
   "contact_section": {
