@@ -93,7 +93,7 @@ export const useProjects = (): Project[] => {
     {
       title: t("projectsList.project_8_learnify.title"),
       description: t("projectsList.project_8_learnify.description"),
-      image: "/images/learnify.webp",
+      image: "/images/learn.webp",
       technologies: ["Reactjs", "Next.js", "Typescript", "Tailwind CSS"],
       githubUrl: "https://github.com/AshuraDev/learnify",
       liveUrl: "https://learnify-eta-silk.vercel.app/",
