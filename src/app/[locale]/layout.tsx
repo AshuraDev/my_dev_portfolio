@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Poppins } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { getMessages } from "next-intl/server";
@@ -11,9 +11,9 @@ import Footer from "@/components/footer/footer";
 import { AnimatedBlobs } from "@/components/animated-blobs";
 import { Toaster } from "@/components/ui/toaster";
 
-const roboto = Roboto({
+const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -40,7 +40,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={`${roboto.className} dark relative min-h-screen overflow-x-hidden`}>
+      <body className={`${poppins.className} dark relative overflow-x-hidden`}>
         <NextIntlClientProvider messages={messages} locale={locale}>
           <AOSProvider>
             <AnimatedBlobs />

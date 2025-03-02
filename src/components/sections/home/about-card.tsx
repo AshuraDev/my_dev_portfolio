@@ -71,6 +71,7 @@ const AboutCard = () => {
                       width={20}
                       height={20}
                       alt={skill.name}
+                      className="object-cover"
                     />
                     {skill.name}
                   </Badge>

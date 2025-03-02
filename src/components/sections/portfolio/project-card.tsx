@@ -26,21 +26,20 @@ export function ProjectCard({
       data-aos="fade-up"
       data-aos-duration="1000"
     >
-      <div className="relative h-48 w-full overflow-hidden bg-slate-300">
+      <div className="relative h-56 w-full overflow-hidden bg-slate-300">
         <Image
           src={image}
           alt={title}
           fill
-          style={{ objectFit: "cover" }}
-          // className="transition-transform duration-300 hover:scale-105"
+          className="object-cover"
         />
       </div>
 
-      <div className="p-6 flex flex-col flex-grow">
-        <h3 className="text-base md:text-lg lg:text-xl font-bold mb-2 line-clamp-2">
+      <div className="p-4 flex flex-col flex-grow">
+        <h3 className="text-base lg:text-lg font-bold mb-1 line-clamp-2">
           {title}
         </h3>
-        <p className="text-sm md:text-base text-muted-foreground mb-4 line-clamp-3">
+        <p className="text-sm text-muted-foreground mb-2 line-clamp-3">
           {description}
         </p>
 
@@ -49,7 +48,7 @@ export function ProjectCard({
             <Badge
               key={tech}
               variant="secondary"
-              className="flex items-center justify-center gap-1"
+              className="flex items-center font-normal justify-center gap-1"
             >
               {tech}
             </Badge>

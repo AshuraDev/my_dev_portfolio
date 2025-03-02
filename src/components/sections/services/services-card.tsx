@@ -24,16 +24,15 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           alt={title}
           fill
           style={{ objectFit: "cover" }}
-          className=""
         />
       </div>
       <div className="p-4 flex flex-col flex-grow">
         <div className="flex items-center justify-between">
-          <h3 className="text-base md:text-xl font-semibold text-primary">
+          <h3 className="text-base md:text-lg font-semibold text-primary">
             {title}
           </h3>
         </div>
-        <p className="mt-3 text-sm md:text-base text-justify">{description}</p>
+        <p className="mt-1 text-sm font-normal text-justify">{description}</p>
       </div>
     </div>
   );

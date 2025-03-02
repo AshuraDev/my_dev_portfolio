@@ -65,6 +65,14 @@
     "project_6_my_store": {
       "title": "My Store (Frontend E-commerce)",
       "description": "Interface e-commerce simple et épurée pour la vente de chaussures, intégrant une démonstration de paiement via Stripe pour simuler une expérience d'achat complète."
+    },
+    "project_7_cofeo": {
+      "title": "Wake Up Brunch",
+      "description": "Landing page pour un café-brunch, mettant en avant son menu et son ambiance."
+    },
+    "project_8_learnify": {
+      "title": "Learnify",
+      "description": "Landing page engageante pour une plateforme d'apprentissage en ligne."
     }
   },
   "contact_section": {

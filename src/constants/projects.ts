@@ -76,5 +76,27 @@ export const useProjects = (): Project[] => {
       githubUrl: "https://github.com/AshuraDev/ecommerce-store",
       liveUrl: "https://my-store-demo-coral.vercel.app/",
     },
+    {
+      title: t("projectsList.project_7_cofeo.title"),
+      description: t("projectsList.project_7_cofeo.description"),
+      image: "/images/caffeo.webp",
+      technologies: [
+        "Reactjs",
+        "Next.js",
+        "Typescript",
+        "Tailwind CSS",
+        "Shadcn",
+      ],
+      githubUrl: "https://github.com/AshuraDev/coffee-brunch",
+      liveUrl: "https://wake-up-brunch.vercel.app/",
+    },
+    {
+      title: t("projectsList.project_8_learnify.title"),
+      description: t("projectsList.project_8_learnify.description"),
+      image: "/images/learnify.webp",
+      technologies: ["Reactjs", "Next.js", "Typescript", "Tailwind CSS"],
+      githubUrl: "https://github.com/AshuraDev/learnify",
+      liveUrl: "https://learnify-eta-silk.vercel.app/",
+    },
   ];
 };
